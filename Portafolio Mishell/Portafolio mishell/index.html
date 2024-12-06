@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" user-scalable="no" />
+    <link rel="stylesheet" href="./style.css" />
+    <!-- tipografias -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Portafolio personal</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header container">
+      <h1 class="header__logo">
+        <span class="logo">Mish</span>
+      </h1>
+      <nav class="nav">
+        <a class="nav__link" href="#1">Sobre mí</a>
+        <a class="nav__link" href="#2">Proyectos</a>
+        <a class="nav__link" href="#3">Servicios</a>
+        <a class="nav__link__contact" href="#4">Contáctame</a>
+      </nav>
+    </header>
+    <!-- hero -->
+    <main class="main" id="1">
+      <section class="hero">
+        <div class="hero__content container">
+          <div class="hero__info">
+            <h2 class="hero__title">
+              ¡Hola! Mi nombre es Mishell Mendoza, soy estudiante de diseño gráfico y este es mi portafolio.
+            </h2>
+            <p class="hero__paragrpah">
+              Lo que me define como diseñadora es mi liderazgo, integridad, comunicación y competencias digitales.
+            </p>
+            <a
+              class="button"
+              href="https://www.canva.com/design/DAFkOv4Izn0/pfs8Iqj9ccbtxAXQKsvZfQ/edit?utm_content=DAFkOv4Izn0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+              >Descargar CV</a
+            >
+          </div>
+          <figure class="hero__figure">
+            <img class="hero__img" src="./recursos/foto-principal.jpg" alt="Foto Mishell" />
+            <div class="circulo"></div>
+          </figure>
+        </div>
+      </section>
+    </main>
+    <!-- prueba -->
+    <div class="intro">
+      <div class="intro__circle"></div>
+      <div class="intro__container">
+        <div class="intro__title">
+          <h2>Me encuentro ubicada en Colombia</h2>
+          <p class="intro__text">
+            Sin embargo
+            <span class="destacado">cuento con la capacidad de colaborar con clientes de todo el mundo.</span>
+            Mi enfoque profesional y mi manejo de herramientas digitales me permiten adaptarme a las necesidades de
+            diferentes mercados internacionales, garantizando resultados de calidad.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--Imagenes  -->
+    <div class="intro__container__image">
+      <div class="image-container img-1">
+        <img class="intro__image" src="./recursos/foto-baile.jpg" alt="Foto baile" />
+        <div class="overlay">Me gusta bailar</div>
+      </div>
+      <div class="image-container img-2">
+        <img class="intro__image" src="./recursos/foto-mar.jpg" alt="Foto mar" />
+        <div class="overlay">Uno de mis colores favoritos es el azul</div>
+      </div>
+      <div class="image-container img-3">
+        <img class="intro__image" src="./recursos/foto-derecho.jpg" alt="Foto derecho" />
+        <div class="overlay">Mi segunda carrera es derecho</div>
+      </div>
+    </div>
+
+    <!-- proyectos -->
+    <div class="projects" id="2">
+      <div class="projects__container">
+        <div class="projects__title">Proyectos</div>
+        <p class="projects__paragraph">
+          A continuación, encontrarás una selección de proyectos universitarios que reflejan mi crecimiento y pasión por
+          el diseño gráfico.
+        </p>
+      </div>
+
+      <!-- carrusel -->
+      <div class="carrusel">
+        <!-- Controles invisibles -->
+        <input type="radio" name="control" id="grupo1" checked />
+        <input type="radio" name="control" id="grupo2" />
+
+        <!-- Contenedor de imágenes -->
+        <div class="carrusel-contenedor">
+          <div class="grupo">
+            <img src="./recursos/tarjeta-nati.png" alt="Imagen 1" />
+            <img src="./recursos/caribe.png" alt="Imagen 2" />
+            <img src="./recursos/transparencia.jpg" alt="Imagen 3" />
+          </div>
+          <div class="grupo">
+            <img src="./recursos/opacidad.jpg" alt="Imagen 4" />
+            <img src="./recursos/evolucion.jpg" alt="Imagen 5" />
+            <img src="./recursos/captura.png" alt="Imagen 6" />
+          </div>
+        </div>
+
+        <!-- Botones -->
+        <button class="boton izquierda" onclick="document.getElementById('grupo1').checked = true;">&#8249;</button>
+        <button class="boton derecha" onclick="document.getElementById('grupo2').checked = true;">&#8250;</button>
+      </div>
+    </div>
+
+    <!-- Servicios -->
+    <div class="services-container" id="3">
+      <div class="services-title">Mis servicios</div>
+      <div class="services-grid">
+        <div class="services-item">
+          <div class="services-icon">
+            <img src="./recursos/icono-computador.svg" alt="Diseño UI" />
+          </div>
+          <div class="services-label">Diseño UI</div>
+        </div>
+        <div class="services-item">
+          <div class="services-icon">
+            <img src="./recursos/icono-corazón.svg" alt="Publicidad" />
+          </div>
+          <div class="services-label">Publicidad</div>
+        </div>
+        <div class="services-item pencil">
+          <div class="services-icon">
+            <img src="./recursos/icono-lapiz.svg" alt="Infografía" />
+          </div>
+          <div class="services-label">Infografía</div>
+        </div>
+      </div>
+    </div>
+    <!-- contacto -->
+    <div class="contact" id="4">
+      <div class="contact__container">
+        <h2 class="contact__title">¿Tienes un proyecto en mente?</h2>
+        <p class="contact__description">
+          Estoy aquí para dar vida a tus ideas. Escríbeme, sígueme o completa el formulario de contacto para que
+          trabajemos juntos en algo increíble. <span class="contact-highlight">¡Espero saber de ti pronto!</span>
+        </p>
+        <div class="social__icons">
+          <a href="https://www.instagram.com/mishmenji/profilecard/?igsh=b2cyZzhkejExcjR0">
+            <img class="social__icons" src="./recursos/instagram-svgrepo-com.svg" alt="Logo instagram" />
+          </a>
+          <a href="https://wa.me/qr/A5TPQ7IUML2JC1">
+            <img class="social__icons" src="./recursos/whatsapp-logo-variant-svgrepo-com.svg" alt="Logo whatsApp" />
+          </a>
+        </div>
+      </div>
+      <form class="contact__form">
+        <input class="contact__input" type="text" name="name" placeholder="Nombre" required />
+        <input class="contact__input" type="number" name="phone" placeholder="Telefono" required />
+        <button class="contact__button" type="submit">Enviar</button>
+      </form>
+    </div>
+    <!-- Footer -->
+    <footer class="footer">
+      <p class="footer__text">© 2021 Mishell Mendoza. Todos los derechos reservados.</p>
+    </footer>
+  </body>
+</html>
